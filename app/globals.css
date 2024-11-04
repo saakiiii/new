@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+.grid-layout{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 20px;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+.moveleft{
+  left: -16pc;
+}
+
+.moveleft-c{
+  padding-left: 0px;
+}
+
+.montserrat-body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.par-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.par-div-un{
+  width: 80%;
+  color: white;
+  font-size: 20px;
+  padding-left: 16px;
+}
+
+.par-div-btn{
+  text-align: center;
+  width: 20%;
+}
+
+#mic-toggle{
+  width: 100%;
+  color: white;
+}
+
+.query_gem{
+  margin-top: 15px;
+  font-size: 20px;
+  color: white;
+  font-weight: 800;
+}
+
+.response_gem{
+  padding-left: 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+}
